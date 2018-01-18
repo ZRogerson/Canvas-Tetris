@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#paused {
+    position: fixed;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: 1;
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.75);
+    font-size: 150px;
+    color: white;
+    align-items: center;
+}
+
+.game {
+    position: fixed;
+    top: 0; right: 0; bottom: 0; left: 0;
+    display: flex;
+    flex-direction: row;
+    background: repeating-linear-gradient( -55deg, #222, #222 10px, #333 10px, #333 20px);
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+canvas {
+    width: 480px;
+    height: 800px;
+    margin: auto;
+    border: 2px solid gray;
+}
+
+#score {
+    width: 80%;
+    margin: 25px auto;
+    padding: 25px 0;
+    text-align: center;
+    font-size: 25px;
+    border: 2px solid gray;
+    border-radius: 5px;
+
+    background: black;
+    color: white;
+}
